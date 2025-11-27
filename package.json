@@ -17,6 +17,8 @@
     "openapi": "swagger-cli bundle ./src/openapi/openapi.yaml --outfile ./dist/openapi/openapi.yaml --type yaml"
   },
   "dependencies": {
+    "axios": "^1.13.2",
+    "axios-cache-interceptor": "^1.8.3",
     "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",

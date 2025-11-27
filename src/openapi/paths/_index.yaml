@@ -1,0 +1,2 @@
+/weather/report/{lat},{long}:
+  $ref: ./weather/report.yaml

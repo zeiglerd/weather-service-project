@@ -1,0 +1,31 @@
+get:
+  x-eov-operation-id: default
+  x-eov-operation-handler: weather/getReport
+  parameters:
+    - name: lat
+      in: path
+      required: true
+      schema:
+        type: string
+        minLength: 1
+        maxLength: 50
+    - name: long
+      in: path
+      required: true
+      schema:
+        type: string
+        minLength: 1
+        maxLength: 50
+  responses:
+    200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: '../../openapi.yaml#/components/schemas/ReportResult'
+    400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '../../openapi.yaml#/components/schemas/BadRequest'

@@ -28,3 +28,30 @@ Powered by 🔌 https://www.weather.gov/documentation/services-web-api
 ## Start
 
 - **$** `npm start`
+
+
+## Routes
+
+- > ### GET `/weather/report/{lat},{long}`
+  >
+  >> #### Parameters
+  >>  - `lat`: Latitude
+  >>  - `long`: Longitude
+  >
+  >> #### Returns
+  >>  - The forecasted weather.
+  >>
+  >>    Example JSON:
+  >>    ```
+  >>    {
+  >>      "characterization": "cold",
+  >>      "shortForecast": "Mostly Cloudy"
+  >>    }
+  >>    ```
+  > ---
+
+- > ### GET `/api-docs`
+  >
+  >> #### Returns
+  >>  - OpenAPI specification.
+  > ---
