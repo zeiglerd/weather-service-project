@@ -30,6 +30,11 @@ Powered by 🔌 https://www.weather.gov/documentation/services-web-api
 - **$** `npm start`
 
 
+## Test
+
+- **$** `npm t`
+
+
 ## Routes
 
 - > ### GET `/weather/report/{lat},{long}`
