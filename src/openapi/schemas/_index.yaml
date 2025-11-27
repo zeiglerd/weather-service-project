@@ -1,0 +1,4 @@
+BadRequest:
+  $ref: ./bad-request.yaml
+ReportResult:
+  $ref: ./report-result.yaml
